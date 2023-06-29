@@ -86,4 +86,4 @@ kirim.addEventListener('click',function(){
 
 
 // menambahkan gambar pada body
-document.body.style.backgroundImage = "url('../src/Image/notebook.jpg')"
+document.body.style.backgroundImage = "url('notebook.jpg')"

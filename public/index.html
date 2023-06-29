@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                fontFamily: {
+                    wawan:"Martian Mono",
+                    fontInter: "Inter"
+                },
+                backgroundSize:{
+                    normalSize : "40px"
+                }
+                
+            }
+        }
+        }
+       
+        
+    </script>
+
+</head>
+<body>
+    <div class="container p-8 ">
+        
+        <div class="content max-w-sm  mx-auto p-9 pt-3  h-[550px] rounded-lg  shadow-lg shadow-slate-500/100 mt-10 bg-gradient-to-br from-slate-300 to bg-yellow-200">
+            <!-- sampul -->
+            <h4 class=" font-mono text-5xl mb-5 font-fontInter rounded text-center font-semibold  bg-gradient-to-r from-green-600 to-red-400 bg-clip-text text-transparent">TODO LIST</h4>
+            <div class="card  ">
+                <p class="text-xs ml-2 font-bold mb-2">Contoh :</p>
+
+                <div class="kotak w-full  relative mx-auto rounded-lg border bg-slate-100 text-center h-16 flex justify-center items-center border-green-500 
+                ">
+                    <div class="sampul font-wawan text-xs font-semibold "></div>
+                </div>
+            </div>
+            <input type="text" class="input hidden ">
+            <div class="bungkus flex justify-center">
+
+                <img src="../src/image/plus-button.png" alt="" class="w-10 h-10 mt-10 active:w-14 active:h-14 hover:rotate-180 ease-linear duration-75 tombol">
+                <button class="mt-10 border w-20 kirim ml-5 rounded-lg shadow-slate-800/20 font-bold bg-green-500 font-wawan active:bg-green-700 hidden hover:bg-green-800" >KIRIM!</button>
+            
+            </div>
+            
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
